@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts/screens/screens.dart';
 
 class BottomNavScreen extends StatefulWidget {
   @override
@@ -7,8 +8,8 @@ class BottomNavScreen extends StatefulWidget {
 
 class _BottomNavScreenState extends State<BottomNavScreen> {
   final List _screens = [
-    Scaffold(),
-    Scaffold(),
+    HomeScreen(),
+    Statistik(),
     Scaffold(),
     Scaffold(),
     Scaffold(),
