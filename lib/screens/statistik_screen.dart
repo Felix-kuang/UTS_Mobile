@@ -5,12 +5,13 @@ import 'package:uts/config/styles.dart';
 import 'package:uts/data/data.dart';
 import 'package:uts/widgets/widgets.dart';
 
-class Statistik extends StatefulWidget {
+class StatistikScreen extends StatefulWidget {
+  static const String id = "Statistik_Screen";
   @override
-  _StatistikState createState() => _StatistikState();
+  _StatistikScreenState createState() => _StatistikScreenState();
 }
 
-class _StatistikState extends State<Statistik> {
+class _StatistikScreenState extends State<StatistikScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,15 +26,13 @@ class _StatistikState extends State<Statistik> {
           SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 10.0),
             sliver: SliverToBoxAdapter(
-              child: StatsGrid(),
+              child: StatsCard(),
             ),
           ),
           SliverPadding(
             padding: EdgeInsets.only(top: 20.0),
             sliver: SliverToBoxAdapter(
-              child: CovidBarChart(
-                covidCases: covidIDDaylyNewCase
-              ),
+              child: CovidBarChart(covidCases: covidIDDailyNewCase),
             ),
           ),
         ],

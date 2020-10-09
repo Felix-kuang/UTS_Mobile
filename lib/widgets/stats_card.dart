@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StatsGrid extends StatelessWidget {
+class StatsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

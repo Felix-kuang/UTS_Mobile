@@ -4,8 +4,8 @@ final pencegahan = [
   {"assets/image/mask.png": "Gunakan\nMasker!"},
 ];
 
-final covidIDDaylyNewCase = <double>[
   //data dari worldometer
   //dari tanggal 14 September sampai 21 September (7 hari)
-  4176, 3989, 4168, 3891, 3963, 3507, 3141
+final covidIDDailyNewCase = <double>[
+  4176,3989,4168,3891,3963,3507,3141
 ];

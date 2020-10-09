@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:uts/screens/screens.dart';
 
-class BottomNavScreen extends StatefulWidget {
+class Navbar extends StatefulWidget {
   @override
-  _BottomNavScreenState createState() => _BottomNavScreenState();
+  _NavbarState createState() => _NavbarState();
 }
 
-class _BottomNavScreenState extends State<BottomNavScreen> {
+class _NavbarState extends State<Navbar> {
   final List _screens = [
     HomeScreen(),
-    Statistik(),
-    Scaffold(),
-    Scaffold(),
+    StatistikScreen(),
     Scaffold(),
   ];
   int _currentIndex = 0;
@@ -26,11 +24,11 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
         showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showUnselectedLabels: true,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         elevation: 0.0,
-        items: [Icons.home, Icons.insert_chart, Icons.event_note, Icons.info]
+        items: [Icons.home, Icons.insert_chart, Icons.info]
         .asMap()
         .map(
           (key, value) => MapEntry(

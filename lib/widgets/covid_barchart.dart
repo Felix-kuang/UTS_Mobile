@@ -36,7 +36,7 @@ class CovidBarChart extends StatelessWidget {
             child: BarChart(
               BarChartData(
                 alignment: BarChartAlignment.spaceAround,
-                maxY: 16.0,
+                maxY: 10.0,
                 barTouchData: BarTouchData(enabled: false),
                 titlesData: FlTitlesData(
                   show: true,
@@ -73,15 +73,15 @@ class CovidBarChart extends StatelessWidget {
                       getTitles: (value) {
                         if (value == 0) {
                           return '0';
-                        } else if (value % 3 == 0) {
-                          return '${value ~/ 3 * 5}K';
+                        } else if (value % 2 == 0) {
+                          return '${value ~/ 2 * 2}K';
                         }
                         return '';
                       }),
                 ),
                 gridData: FlGridData(
                   show: true,
-                  checkToShowHorizontalLine: (value) => value % 3 == 0,
+                  checkToShowHorizontalLine: (value) => value % 2 == 0,
                   getDrawingHorizontalLine: (value) => FlLine(
                     color: Colors.black12,
                     strokeWidth: 1.0,
@@ -97,7 +97,7 @@ class CovidBarChart extends StatelessWidget {
                           x: key,
                           barRods: [
                             BarChartRodData(
-                              y: value,
+                              y: value/1000,
                               color: Colors.red,
                             ),
                           ],
