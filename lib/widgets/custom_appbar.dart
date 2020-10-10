@@ -6,7 +6,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget{
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Pallete.primaryColor,
-      elevation: 0.0,
+      elevation: 1.0,
       title: 
         Padding(
           padding: EdgeInsets.symmetric(vertical: 10.0),

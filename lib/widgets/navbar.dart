@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts/screens/about_screen.dart';
 import 'package:uts/screens/screens.dart';
 
 class Navbar extends StatefulWidget {
@@ -10,7 +11,7 @@ class _NavbarState extends State<Navbar> {
   final List _screens = [
     HomeScreen(),
     StatistikScreen(),
-    Scaffold(),
+    AboutScreen(),
   ];
   int _currentIndex = 0;
 
