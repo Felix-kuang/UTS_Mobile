@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.white,
                   ),
                   label: Text(
-                    "Kirim SMS",
+                    "Kirim Pesan",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

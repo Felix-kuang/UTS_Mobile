@@ -59,7 +59,7 @@ class _AboutScreenState extends State<AboutScreen> {
                     FlatButton(
                       onPressed: () {
                         setState(() {
-                          nama = "Jet J Krisnadi Jones";
+                          nama = "Jet J Krisnadi";
                           nim = "32180014";
                         });
                       },

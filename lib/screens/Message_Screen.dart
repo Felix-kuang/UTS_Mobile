@@ -2,10 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:uts/config/pallete.dart';
 import 'package:uts/widgets/custom_appbar.dart';
 
-class MessageScreen extends StatelessWidget {
+class MessageScreen extends StatefulWidget {
   static const String id = "Message_Screen";
+
+  @override
+  _MessageScreenState createState() => _MessageScreenState();
+}
+
+class _MessageScreenState extends State<MessageScreen> {
   String imgProfile =
-      "https://www.pngkey.com/png/detail/230-2301779_best_classified-apps-default-user-profile.png";
+      "https://www.nicepng.com/png/full/87-874647_red-cross-hospital-logo-hospital-logo-red-cross.png";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
