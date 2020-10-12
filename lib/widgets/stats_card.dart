@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 
 class StatsCard extends StatelessWidget {
+  final String total, meninggal, sembuh, rawat;
+
+  const StatsCard(
+  {
+    Key key, 
+    this.total, 
+    this.meninggal, 
+    this.sembuh, 
+    this.rawat
+  }): super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -10,16 +21,16 @@ class StatsCard extends StatelessWidget {
           Flexible(
             child: Row(
               children: [
-                _buildStatsCard("Total Kasus", "248,582", Colors.orange),
-                _buildStatsCard("Total Meninggal", "9,677", Colors.red),
+                _buildStatsCard("Total Kasus", total, Colors.orange),
+                _buildStatsCard("Total Meninggal", meninggal, Colors.red),
               ],
             ),
           ),
           Flexible(
             child: Row(
               children: [
-                _buildStatsCard("Total Sembuh", "180,797", Colors.green),
-                _buildStatsCard("Dalam Perawatan", "58,378", Colors.blue),
+                _buildStatsCard("Total Sembuh", sembuh, Colors.green),
+                _buildStatsCard("Dalam Perawatan", rawat, Colors.blue),
               ],
             ),
           ),
@@ -35,8 +46,7 @@ Expanded _buildStatsCard(String nama, String total, MaterialColor warna) {
       margin: EdgeInsets.all(8.0),
       padding: EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        color: warna, borderRadius: BorderRadius.circular(10.0)
-      ),
+          color: warna, borderRadius: BorderRadius.circular(10.0)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,

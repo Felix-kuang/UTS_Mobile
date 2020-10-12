@@ -24,7 +24,7 @@ class CovidBarChart extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             alignment: Alignment.centerLeft,
             child: Text(
-              'Kasus Per Hari',
+              'Kasus Per Hari (Indonesia)',
               style: const TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,

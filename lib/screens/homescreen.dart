@@ -175,7 +175,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFFA09FE4), Pallete.primaryColor],
+          colors: [Colors.lightBlue[50], Pallete.primaryColor],
         ),
         borderRadius: BorderRadius.circular(20.0),
       ),

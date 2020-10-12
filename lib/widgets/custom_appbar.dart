@@ -11,7 +11,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget{
         Padding(
           padding: EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            "Aplikasi Covid-19",
+            "Covid-19",
             style: TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.w700,
