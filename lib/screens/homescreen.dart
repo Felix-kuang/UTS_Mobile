@@ -168,45 +168,46 @@ class _HomeScreenState extends State<HomeScreen> {
 
   SliverToBoxAdapter _buildOwnTest(double screenHeight) {
     return SliverToBoxAdapter(
-        child: Container(
-      margin: EdgeInsets.symmetric(
-        vertical: 10.0,
-        horizontal: 20.0,
-      ),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Colors.lightBlue[50], Pallete.primaryColor],
+      child: Container(
+        margin: EdgeInsets.symmetric(
+          vertical: 10.0,
+          horizontal: 20.0,
         ),
-        borderRadius: BorderRadius.circular(20.0),
-      ),
-      height: screenHeight * 0.15,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Image.asset("assets/image/own_test.png"),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Lakukan Tes Sendiri",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17.0,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "Ikuti instruksi untuk \nmelakukan tes sendiri",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 13.0,
-                  fontWeight: FontWeight.w100,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.lightBlue[50], Pallete.primaryColor],
+          ),
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        height: screenHeight * 0.15,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Image.asset("assets/image/own_test.png"),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Lakukan Tes Sendiri",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 17.0,
+                      fontWeight: FontWeight.bold),
                 ),
-              ),
-            ],
-          )
-        ],
-      ),
-    ));
+                Text(
+                  "Ikuti instruksi untuk \nmelakukan tes sendiri",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13.0,
+                    fontWeight: FontWeight.w100,
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      )
+    );
   }
 }
