@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:uts/config/pallete.dart';
 import 'package:uts/widgets/custom_appbar.dart';
 
-class CallScreen extends StatelessWidget {
+class CallScreen extends StatefulWidget {
   static const String id = "Call_Screen";
 
-  final String imgProfile =
+  @override
+  _CallScreenState createState() => _CallScreenState();
+}
+
+class _CallScreenState extends State<CallScreen> {
+  String imgProfile =
       "https://www.nicepng.com/png/full/87-874647_red-cross-hospital-logo-hospital-logo-red-cross.png";
 
   @override
