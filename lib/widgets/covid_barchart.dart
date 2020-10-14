@@ -10,7 +10,7 @@ class CovidBarChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 350.0,
+      height: MediaQuery.of(context).size.height * 0.55,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
